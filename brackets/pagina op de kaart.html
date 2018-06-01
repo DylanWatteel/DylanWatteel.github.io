@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Op de kaart</title>
+    <link type="text/css" href="site_dylan_watteel.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div class= "wrapper-header , cfx ">
+
+   
+   <header class= "cfx" >
+   <a href="site_dylan_watteel.html"><img src="/foto's/logo" alt="logo is foto in vallei met foto in de hand"></a>
+   <h1>Vijf mooie plaatsen in de wereld</h1>
+   </header>
+ </div>
+   
+   
+   <div id="content" class="cfx" >
+       <main >   
+           <nav>
+               <ul>
+                   <li> <a href="site_dylan_watteel.html">Home</a> </li>
+                   
+                   <li ><a href="pagina%20plaats%201.html">Petra</a></li>
+                   
+                   <li> <a href="pagina%20plaats%202.html">Chinese Muur </a></li>
+                   
+                   <li> <a href="pagina%20plaats%203.html">Mont Saint-Michel </a></li>
+                   
+                   <li ><a href="pagina%20plaats%204.html"> Jökulsárlón</a></li>
+                   
+                   <li ><a href="pagina%20plaats%205.html">Angkor</a></li>
+                   
+                   <li class="active"><a href="pagina%20op%20de%20kaart.html">op de kaart</a></li>
+               </ul>
+           </nav>
+        </main>
+       
+       <aside>    
+            <div class="aside-text" >
+               <h3>Op de kaart </h3>
+               <div id="map"></div>
+               
+               
+            </div>
+            
+            
+       </aside>
+   </div>
+   
+   <footer class="cfx">
+       <p>Wij ontvangen graag een mail als je iets wilt melden of aanbevelen </p><p>
+          Contact: vijfMooistePlaatsen@hotmail.com</p>
+   </footer>
+     
+
+<script>
+ 
+      function initMap() {
+    
+          var Petra={lat:30.32221, lng: 35.47933};
+          var ChineseMuur = {lat: 40.42, lng:116.3};
+          var MontSaintMichel ={lat: 48.6356, lng: -1.5106};
+          var Jökulsárlón= {lat:64.068833058, lng:-16.206999172};
+          var Angkor = {lat:13.443302, lng:103.859682}
+        
+          var map = new google.maps.Map(document.getElementById("map"),{
+          zoom: 2,
+            center:location
+          
+        });
+          
+        var markerPetra = new google.maps.Marker({
+          position: Petra,
+          map: map
+        });
+           var markerChineseMuur = new google.maps.Marker({
+          position: ChineseMuur,
+          map: map
+        });
+          var markerMontSaintMichel = new google.maps.Marker({
+          position: MontSaintMichel,
+          map: map
+        });
+         var markerJökulsárlón = new google.maps.Marker({
+          position: Jökulsárlón,
+          map: map
+        });
+         var marker Angkor = new google.maps.Marker({
+          position:  Angkor,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDm0ASY5VVMLzIVf_z2KIoaLn7vNsiNdOY&callback=initMap">
+    </script>
+    </body>
+    
+</html>
+
+
+  
+
